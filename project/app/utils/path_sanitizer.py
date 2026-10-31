@@ -39,7 +39,7 @@ def sanitize_s3_path_component(name: str, max_length: int = 255) -> str:
     sanitized = sanitized.strip('_-')
     
     # Lowercase for consistency
-    sanitized = sanitized.lower()
+    sanitized = sanitized.casefold()
     
     # Ensure it's not empty
     if not sanitized:
