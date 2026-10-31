@@ -690,7 +690,6 @@ class TransformExecuteResponse(BaseModel):
     """Response for transform execution."""
     config_id: int
     config_name: str
-    execution_id: Optional[int] = None
     job_id: Optional[int] = None
     status: TransformStatusEnum
     rows_processed: int
